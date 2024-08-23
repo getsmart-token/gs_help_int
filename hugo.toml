@@ -1,5 +1,6 @@
 baseURL = "/"
 title = "GetSmart Help Internal"
+#Git add . and git status test comment line
 
 # Language settings
 contentDir = "content/en"
