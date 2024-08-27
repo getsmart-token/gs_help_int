@@ -7,7 +7,7 @@ title: GetSmart Token Help Internal
   Read the docs <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://getstoken.org/about">
-  About GetSmart Token <i class="fab fa-link ms-2 "></i>
+  About GetSmart Token <i class="fas fa-link ms-2 "></i>
 </a>
 <p class="lead mt-5">Create, Fund, and Verify Awards on Public Blockchain.</p>
 {{< blocks/link-down color="info" >}}
