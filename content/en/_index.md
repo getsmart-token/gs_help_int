@@ -1,7 +1,5 @@
 ---
-title: GetSmart Token Help
-description: GetSmart Token is a Decentralized Education Financing Platform Managed By Trusted Experts Who Care About Education.
-date: 2024-08-26T15:53:33.199Z
+title: Goldydocs
 ---
 
 {{< blocks/cover title="Welcome to Goldydocs: A Docsy Example Project!" image_anchor="top" height="full" >}}
