@@ -1,7 +1,7 @@
 ---
 title: Core Tasks
-description: What can your user do with your project?
-date: 2017-01-05
+description: GetSmart Token Project
+date: 2024-08-26
 weight: 6
 ---
 
