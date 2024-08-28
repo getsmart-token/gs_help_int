@@ -1,6 +1,24 @@
 /*
 
 Add styles or override variables from the theme here.
+.site-footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f8f9fa;
 
+  .copyright {
+    font-size: 14px;
+    color: #6c757d;
+  }
+
+  .footer-link {
+    color: #007bff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
 */
 
