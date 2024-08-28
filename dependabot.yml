@@ -1,0 +1,39 @@
+version: 2
+updates:
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+
+  # Maintain dependencies for npm
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+
+  # Maintain dependencies for Go modules
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+
+  # Maintain dependencies for Hugo modules (if used)
+  - package-ecosystem: "gomod"
+    directory: "/themes"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+
+  # Check for updates to Netlify configuration
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    allow:
+      # Allow updates for Netlify-related packages
+      - dependency-name: "netlify*"
+    open-pull-requests-limit: 10
