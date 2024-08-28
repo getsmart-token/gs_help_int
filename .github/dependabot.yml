@@ -1,14 +1,52 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-    time: '20:00'
-  open-pull-requests-limit: 10
-- package-ecosystem: bundler
-  directory: "/"
-  schedule:
-    interval: daily
-    time: '20:00'
-  open-pull-requests-limit: 10
+  # Maintain dependencies for npm
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "20:00"
+    open-pull-requests-limit: 10
+
+  # Maintain dependencies for bundler
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "20:00"
+    open-pull-requests-limit: 10
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "20:00"
+    open-pull-requests-limit: 10
+
+  # Maintain dependencies for Go modules (Hugo uses these)
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "20:00"
+    open-pull-requests-limit: 10
+
+  # Check for updates to Hugo modules (if used)
+  - package-ecosystem: "gomod"
+    directory: "/themes"
+    schedule:
+      interval: "daily"
+      time: "20:00"
+    open-pull-requests-limit: 10
+
+  # Check for updates to Netlify-specific packages
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "20:00"
+    allow:
+      # Allow updates for Netlify-related packages
+      - dependency-name: "netlify*"
+    open-pull-requests-limit: 10
