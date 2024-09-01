@@ -8,7 +8,11 @@ weight: 2
 
 # Metakeep Integration process
 
-![Metakeep Integration Process Flowchart](metakeep_integration.svg)
+![Metakeep Integration Process Flowchart](/images/metakeep_integration.png)
+
+
+
+
 
 1. Metakeep Integration
 2. Create Profile (New Change)
