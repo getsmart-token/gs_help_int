@@ -1,5 +1,7 @@
 ---
 title: GetSmart Token Help Internal
+description: The help documentation for developing, deploying, maintaining and supportin the GetSmart Token project. A project by the non-profit Digital Financial Aid Corp
+date: 2024-09-05T14:44:38.383Z
 ---
 
 {{< blocks/cover title="Welcome to Getsmart Token Help. This is the internal documentation." image_anchor="top" height="full" >}}
@@ -20,8 +22,6 @@ title: GetSmart Token Help Internal
 For announcement of latest features etc.
 {{% /blocks/feature %}}
 
-
-
 {{% blocks/feature icon="fab fa-youtube" title="Learn about us on Youtube!" url="https://www.youtube.com/@GetSmartToken" %}}
 For announcement of latest features etc.
 {{% /blocks/feature %}}
@@ -30,26 +30,4 @@ For announcement of latest features etc.
 Dr. Josh Lange on LinkedIn
 {{% /blocks/feature %}}
 
-{{% /blocks/section %}}
-
-
-{{% blocks/section %}}
-This is the second section
-{.h1 .text-center}
-{{% /blocks/section %}}
-
-
-{{% blocks/section type="row" %}}
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!"
-    url="https://twitter.com/GetsToken" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-{{% /blocks/section %}}
-
-
-{{% blocks/section %}}
-This is the another section
-{.h1 .text-center}
 {{% /blocks/section %}}

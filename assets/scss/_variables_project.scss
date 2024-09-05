@@ -1,24 +1,22 @@
-/*
-
-Add styles or override variables from the theme here.
-.site-footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #f8f9fa;
-
-  .copyright {
-    font-size: 14px;
-    color: #6c757d;
-  }
-
-  .footer-link {
-    color: #007bff;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+// Override default variables to customize the Docsy theme
+.td-navbar {
+  background-color: #006931 !important;
 }
-*/
 
+// Custom styles for the cover block
+#td-cover-block-0 {
+  background-color: #006931 !important;
+}
+
+// Custom styles for the navbar logo
+.td-navbar .navbar-brand__logo {
+  content: url('/images/logo-get-smart.svg');  // Use the new SVG
+  max-height: 50px;  // Ensure responsiveness; adjust as needed
+  width: auto;
+  height: auto;
+}
+
+// Optional: Hide project name if the logo is a wordmark
+.td-navbar .navbar-brand__name {
+  display: none;
+}
