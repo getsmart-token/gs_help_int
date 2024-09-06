@@ -42,6 +42,40 @@
           "title": "Categories",
           "name": "categories",
           "type": "categories"
+        },
+        {
+          "title": "Title",
+          "name": "Title",
+          "type": "string"
+        },
+        {
+          "title": "linkTitle",
+          "name": "linkTitle",
+          "type": "string"
+        },
+        {
+          "title": "menu",
+          "name": "menu",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "main",
+              "name": "main",
+              "type": "fields",
+              "fields": [
+                {
+                  "title": "weight",
+                  "name": "weight",
+                  "type": "number"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "weight",
+          "name": "weight",
+          "type": "number"
         }
       ]
     }

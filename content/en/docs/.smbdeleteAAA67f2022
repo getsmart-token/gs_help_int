@@ -1,0 +1,60 @@
+---
+Title: Structure
+linkTitle: Structure
+menu: {main: {weight: 20}}
+weight: 0
+---
+
+# GetSMart Token Project
+
+## Core Platform functions
+- Create and manage digital badges
+- Set up sponsor and achiever accounts
+- Implement badge awarding system
+- Develop achievement tracking mechanism
+- Integrate with Polygon network
+
+## 1. Getting Started
+- Project overview
+- Setting up the development environment
+- Connecting to Polygon network
+
+## 2. User Roles
+- Sponsor account creation and management
+- Achiever account creation and management
+
+## 3. Badge System
+- Creating digital badges
+- Defining achievement criteria
+- Awarding badges to achievers
+
+## 4. Blockchain Integration
+- Smart contract development
+- Token minting and management
+- Recording achievements on the blockchain
+
+## 5. User Interface
+- Dashboard for sponsors
+- Dashboard for achievers
+- Badge showcase and verification
+
+## 6. Security and Privacy
+- Data protection measures
+- Access control and permissions
+
+## 7. API Documentation
+- Endpoints for badge creation, awarding, and verification
+
+## 8. Testing
+- Unit testing
+- Integration testing
+- User acceptance testing
+
+## 9. Deployment
+- Mainnet deployment process
+- Monitoring and maintenance
+
+## 10. Community and Support
+- User guides
+- FAQs
+- Support channels
