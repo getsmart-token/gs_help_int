@@ -46,7 +46,7 @@ Achievers are individuals who earn and showcase digital badges for their accompl
 
 ## Earner Accounts
 
-Anyone who holds GetSmart Tokens ($GETS) can be an Earner, earning additional tokens based on the value of the currency.
+Anyone who holds GetSmart Tokens ($GETS) can be an Earner, earning additional tokens when staking their tokens towards sponsored badges.
 
 ### Becoming an Earner
 
@@ -57,7 +57,7 @@ Anyone who holds GetSmart Tokens ($GETS) can be an Earner, earning additional to
 ### Earner Activities
 
 - Hold $GETS tokens in your wallet
-- Earn additional tokens based on the current value of $GETS
+- Earn additional tokens based on the tokenomics of staking $GETS
 - Participate in governance decisions (if applicable)
 - Monitor earnings and token value through the platform dashboard
 
@@ -71,7 +71,7 @@ Users can hold multiple roles simultaneously:
 
 ## Security and Privacy
 
-- All account types have robust security measures
+- All account types have robust security measures (See [docs/security-privacy](Security & Privacy))
 - Users control the visibility of their information, achievements, and token holdings
 - Option to enable two-factor authentication for added security
 
