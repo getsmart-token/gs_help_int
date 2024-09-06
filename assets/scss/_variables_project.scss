@@ -4,8 +4,12 @@
 }
 
 // Custom styles for the cover block
+
+
 #td-cover-block-0 {
-  background-color: #006931 !important;
+    background-image: url('/featured-background.jpg') !important;
+    background-size: cover;
+    background-position: center;
 }
 
 // Custom styles for the navbar logo

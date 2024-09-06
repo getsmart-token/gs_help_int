@@ -16,6 +16,7 @@ enableGitInfo = true
 [taxonomies]
 tag = "tags"
 category = "categories"
+
 [params.taxonomy]
 taxonomyCloud = ["tags", "categories"]
 taxonomyCloudTitle = ["Tag Cloud", "Categories"]
@@ -89,6 +90,13 @@ navbar_translucent_over_cover_disable = false
 sidebar_menu_compact = false
 sidebar_search_disable = false
 
+[params.ui.navbar_logo_image]
+light = "/images/logo-get-smart.svg"
+dark = "/images/logo-get-smart.svg"
+
+[params.ui.navbar]
+height = "50px"
+
 # Feedback configuration
 [params.ui.feedback]
 enable = true
@@ -100,7 +108,6 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 enable = false
 
 # Links configuration
-[params.links]
 [[params.links.developer]]
 name = "GitHub"
 url = "https://github.com/getsmart-token/"
@@ -109,7 +116,6 @@ desc = "Development takes place here!"
 
 # Module configuration
 [module]
-hugoVersion = { extended = true, min = "0.113.0" }
 [[module.imports]]
 path = "github.com/google/docsy"
 [[module.imports]]
