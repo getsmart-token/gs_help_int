@@ -8,6 +8,31 @@ weight: 2
 
 The GetSMart Token platform has three primary user roles: Sponsors, Achievers, and Earners. Understanding these roles is crucial for effectively using the system.
 
+```mermaid
+graph TD
+    subgraph GetSmart_Participants
+        subgraph Sponsors
+        end
+        subgraph Earners
+        A[Achievers]
+        end
+    end
+
+    classDef participantClass fill:#e6f7ff,stroke:#333,stroke-width:2px
+    classDef sponsorClass fill:#f9f,stroke:#333,stroke-width:2px
+    classDef earnerClass fill:#ccf,stroke:#333,stroke-width:2px
+    classDef achieverClass fill:#fc9,stroke:#333,stroke-width:2px
+
+    class GetSmart_Participants participantClass
+    class Sponsors sponsorClass
+    class Earners earnerClass
+    class A achieverClass
+
+    style GetSmart_Participants fill:#e6f7ff,stroke:#333,stroke-width:2px,opacity:0.1
+    style Sponsors fill:#f9f,stroke:#333,stroke-width:2px,opacity:0.3
+    style Earners fill:#ccf,stroke:#333,stroke-width:2px,opacity:0.3
+```
+
 ## Sponsor Accounts
 
 Sponsors are organizations or individuals who create and award digital badges.
