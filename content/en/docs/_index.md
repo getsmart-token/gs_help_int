@@ -49,7 +49,6 @@ Our deployment process leverages DigitalOcean for the API and Vercel for the fro
 We offer various channels for community engagement and support.
 
 - [Community & Support Resources](https://help-int.getstoken.org/docs/community-support/)
-- [Discord Server](https://discord.gg/getsmarttoken)
 - [Support Ticket System](https://support.getstoken.com)
 - [Developer Resources](https://help-int.getstoken.org/docs/community-support/#developer-resources)
 

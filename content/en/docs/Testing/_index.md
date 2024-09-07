@@ -16,7 +16,6 @@ This document outlines the testing procedures and best practices for the Getsmar
 Unit tests focus on individual components or functions of the system. All developers should write unit tests for new code and update existing tests when modifying functionality.
 
 - Use Jest for JavaScript/TypeScript components
-- Use pytest for Python components
 - Aim for at least 80% code coverage
 
 ### 2. Integration Testing
@@ -94,7 +93,7 @@ Perform regression testing before each major release:
 
 ## Documentation
 
-- Keep test plans and cases up-to-date in Confluence
+- Keep test plans and cases up-to-date in the internal [Help documentation (this site)](/docs/)
 - Document all testing procedures and tools
 - Maintain a changelog of test suite modifications
 
