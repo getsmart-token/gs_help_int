@@ -28,8 +28,8 @@ $link-hover-color: darken($link-color, 15%);
   display: none;
 }
 
-// Custom link styles
-a:not(.td-navbar .nav-link) {
+// Custom link styles (excluding buttons and navbar links)
+a:not(.btn):not(.td-navbar .nav-link) {
   color: $link-color !important;
   transition: color 0.3s ease;
 
