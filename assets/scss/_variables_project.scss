@@ -1,5 +1,5 @@
 // Override default variables to customize the Docsy theme
-$primary: #006931;  // Your green color
+$primary: #20c997;  // New teal color
 $link-color: #ffa630;  // Yellow for hyperlinks
 $link-hover-color: darken($link-color, 15%);
 
@@ -57,5 +57,30 @@ a:not(.btn):not(.td-navbar .nav-link) {
 .text-dark-hover {
   &:hover, &:focus {
     color: #333 !important;
+  }
+}
+
+// Button styles
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  color: white !important;  // Ensure text is white
+
+  &:hover, &:focus, &:active {
+    background-color: darken($primary, 10%);
+    border-color: darken($primary, 10%);
+    color: white !important;  // Keep text white on hover/focus/active
+  }
+}
+
+// Ensure other button variants with primary class also have white text
+.btn-outline-primary {
+  color: $primary;
+  border-color: $primary;
+
+  &:hover, &:focus, &:active {
+    background-color: $primary;
+    border-color: $primary;
+    color: white !important;
   }
 }
