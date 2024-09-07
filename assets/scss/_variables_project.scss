@@ -1,21 +1,24 @@
 // Override default variables to customize the Docsy theme
+$primary: #006931;  // Your green color
+$link-color: #ffa630;  // Yellow for hyperlinks
+$link-hover-color: darken($link-color, 15%);
+
+// Custom styles for the navbar
 .td-navbar {
-  background-color: #006931 !important;
+  background-color: $primary !important;
 }
 
 // Custom styles for the cover block
-
-
 #td-cover-block-0 {
-    background-image: url('/featured-background.jpg') !important;
-    background-size: cover;
-    background-position: center;
+  background-image: url('/featured-background.jpg') !important;
+  background-size: cover;
+  background-position: center;
 }
 
 // Custom styles for the navbar logo
 .td-navbar .navbar-brand__logo {
-  content: url('/images/logo-get-smart.svg');  // Use the new SVG
-  max-height: 50px;  // Ensure responsiveness; adjust as needed
+  content: url('/images/logo-get-smart.svg');
+  max-height: 50px;
   width: auto;
   height: auto;
 }
@@ -23,4 +26,36 @@
 // Optional: Hide project name if the logo is a wordmark
 .td-navbar .navbar-brand__name {
   display: none;
+}
+
+// Custom link styles
+a:not(.td-navbar .nav-link) {
+  color: $link-color !important;
+  transition: color 0.3s ease;
+
+  &:hover, &:focus {
+    color: $link-hover-color !important;
+  }
+}
+
+// Navbar links
+.td-navbar .nav-link {
+  color: white !important;
+
+  &:hover, &:focus {
+    color: $link-color !important;
+  }
+}
+
+// Add these utility classes if they're not already provided by Bootstrap or Docsy
+.text-light-hover {
+  &:hover, &:focus {
+    color: white !important;
+  }
+}
+
+.text-dark-hover {
+  &:hover, &:focus {
+    color: #333 !important;
+  }
 }
