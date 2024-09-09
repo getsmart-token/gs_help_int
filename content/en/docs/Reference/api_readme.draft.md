@@ -181,7 +181,7 @@ For more detailed information about the deployment process, refer to the interna
 This project is open for commentary and contributions. Please refer to [CONTRIBUTING.md](./CONTRIBUTING.md) (if available) for guidelines on how to contribute.
 
 ## Author
-Dr. Josh Lange
+Matthew Stevens
 
 ## Copyright and Legal Information
 © 2024 Digital Financial Aid Corporation. All rights reserved.
