@@ -34,7 +34,7 @@ The core process involves four main steps:
 
 To interact with the GetSmart platform, both Sponsors and Earners need an Ethereum/Polygon compatible crypto wallet, such as MetaMask.
 
-*   **Setup:** Follow the instructions at [https://get-smart.net/what-is-metamask-free-and-easy-to-use-crypto-wallet/](https://get-smart.net/what-is-metamask-free-and-easy-to-use-crypto-wallet/) to set up your wallet.
+*   **Setup:** Follow the instructions at [https://getstoken.org/what-is-metamask-free-and-easy-to-use-crypto-wallet/](https://getstoken.org/what-is-metamask-free-and-easy-to-use-crypto-wallet/) to set up your wallet.
 *   **Polygon Network:** Ensure your MetaMask wallet is connected to the Polygon network. Instructions for adding the network are available in the full manual or on polygonscan.com.
 *   **Multiple Accounts:** MetaMask allows creating multiple accounts within one wallet, useful for managing badges for different individuals (e.g., minors).
 
