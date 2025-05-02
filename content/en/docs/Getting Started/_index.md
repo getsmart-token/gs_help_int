@@ -2,6 +2,11 @@
 title: Getting Started
 linkTitle: Getting Started
 weight: 2
+categories:
+  - Getting Started
+tags:
+  - getting-started
+  - overview
 ---
 
 # Getting Started with GetSMart Token

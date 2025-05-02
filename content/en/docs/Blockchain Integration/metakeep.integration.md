@@ -4,6 +4,12 @@ description: >
   This document explains the scope of the integration of Metakeep with GetSmart
 date: 2024-08-26
 weight: 2
+categories:
+  - Blockchain Integration
+tags:
+  - blockchain-integration
+  - metakeep
+  - integration
 ---
 
 # Metakeep Integration process

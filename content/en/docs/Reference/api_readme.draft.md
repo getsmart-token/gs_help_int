@@ -2,6 +2,13 @@
 title: GetSmart Token API README draft
 description: Version 1.0 api README
 date: 2024-08-27
+categories:
+  - Reference
+tags:
+  - reference
+  - api
+  - readme
+  - draft
 ---
 ```markdown
 # GetSmart Token Project

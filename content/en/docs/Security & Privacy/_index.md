@@ -3,6 +3,11 @@ title: "Security & Privacy"
 linkTitle: "Security & Privacy"
 description: "Overview of our security measures and privacy policies"
 weight: 7
+categories:
+  - Security & Privacy
+tags:
+  - security-privacy
+  - overview
 ---
 
 # Security & Privacy

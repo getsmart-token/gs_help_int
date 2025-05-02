@@ -4,6 +4,11 @@ linkTitle: "Deployment"
 weight: 8
 description: >
   Deployment process and considerations for the GetSmart Token API.
+categories:
+  - Deployment
+tags:
+  - deployment
+  - overview
 ---
 
 # Deployment

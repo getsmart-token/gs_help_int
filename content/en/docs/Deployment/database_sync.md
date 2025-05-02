@@ -4,6 +4,12 @@ linkTitle: "Database Sync"
 weight: 40
 description: >
   A practical guide to database synchronization in Blue-Green deployments using snapshots and migrations.
+categories:
+  - Deployment
+tags:
+  - deployment
+  - database
+  - sync
 ---
 
 This guide outlines a common and straightforward approach to database synchronization in Blue-Green deployments using database snapshots and migrations.

@@ -2,6 +2,13 @@
 title: GetSmart Token™ Style Guide
 description: Version 1.0 Style Guide for GetSmart Token
 date: 2024-08-27
+categories:
+  - Reference
+tags:
+  - reference
+  - getsmart
+  - style
+  - guide
 ---
 
 ## Colors

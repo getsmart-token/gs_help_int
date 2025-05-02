@@ -3,6 +3,11 @@ title: "User Interface"
 linkTitle: "User Interface"
 description: "Overview of the Get Smart Token platform user interface"
 weight: 6
+categories:
+  - User Interface
+tags:
+  - user-interface
+  - overview
 ---
 
 # User Interface

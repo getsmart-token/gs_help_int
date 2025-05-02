@@ -3,6 +3,11 @@ title: "Blockchain Integration"
 linkTitle: "Blockchain Integration"
 description: "Details on how our platform integrates with the Polygon blockchain"
 weight: 4
+categories:
+  - Blockchain Integration
+tags:
+  - blockchain-integration
+  - overview
 ---
 
 # Blockchain Integration

@@ -3,6 +3,11 @@ title: "API Documentation"
 linkTitle: "API Documentation"
 description: "Overview of the Get Smart Token API"
 weight: 8
+categories:
+  - API Documentation
+tags:
+  - api-documentation
+  - overview
 ---
 
 # API Documentation

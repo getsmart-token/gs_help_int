@@ -4,6 +4,12 @@ linkTitle: "Internet Architecture"
 weight: 20
 description: >
   Internet Architecture of the GetSmart Token Project.
+categories:
+  - Deployment
+tags:
+  - deployment
+  - internet
+  - architecture
 ---
 ## GetSmart Token Digital Presence
 

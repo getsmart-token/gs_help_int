@@ -3,6 +3,11 @@ title: "Badge System"
 linkTitle: "Badge System"
 description: "Overview of the NFT-based badge system for recognizing achievements"
 weight: 3
+categories:
+  - Badge System
+tags:
+  - badge-system
+  - overview
 ---
 
 # Badge System
