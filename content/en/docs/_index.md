@@ -3,6 +3,11 @@ title: "GetSmart Token Help"
 linkTitle: "Help"
 weight: 20
 description: "Summary of key resources and information for GetSmart Token"
+categories:
+  - Docs
+tags:
+  - docs
+  - overview
 ---
 
 {{% pageinfo %}}

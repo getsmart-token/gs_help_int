@@ -2,6 +2,11 @@
 title: User Roles
 linkTitle: User Roles
 weight: 2
+categories:
+  - User Roles
+tags:
+  - user-roles
+  - overview
 ---
 
 # Who's who on the GetSMart Token platform

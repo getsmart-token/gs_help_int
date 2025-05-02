@@ -3,6 +3,11 @@ title: "Testing"
 linkTitle: "Testing"
 weight: 8
 description: "Guidelines and procedures for testing the Getsmart Token system"
+categories:
+  - Testing
+tags:
+  - testing
+  - overview
 ---
 
 # Testing Getsmart Token

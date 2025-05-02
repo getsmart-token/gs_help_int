@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="td-content">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}{{ . }}{{ end }}
+
+  {{ partial "breadcrumb.html" . }}
+
+  <div class="td-sitemap">
+    <h2>All Pages</h2>
+    <ul>
+      {{ range .Site.RegularPages.ByTitle }}
+        {{/* Exclude the sitemap page itself */}}
+        {{ if ne .Permalink "/sitemap/" }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{/* Optionally show section */}}
+            {{ with .Section }}<span class="text-muted"> (in {{ . }})</span>{{ end }}
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+</div>
+{{ end }}

@@ -4,6 +4,12 @@ linkTitle: "Internet Architecture"
 weight: 20
 description: >
   Internet Architecture of the GetSmart Token Project.
+categories:
+  - Deployment
+tags:
+  - deployment
+  - internet
+  - architecture
 ---
 ## GetSmart Token Digital Presence
 
@@ -59,3 +65,5 @@ graph TD
     style I fill:#ffd,stroke:#333,stroke-width:2px
 ```
 
+
+The internal documentation site (`devdocs.getstoken.org`) is a Hugo static site. It is automatically built and deployed from the `main` branch of the GitHub repository (`getsmart-token/gs_help_int`) to Cloudflare Pages.

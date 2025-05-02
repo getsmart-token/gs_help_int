@@ -3,6 +3,11 @@ title: "Community & Support"
 linkTitle: "Community & Support"
 weight: 10
 description: "Resources for community engagement and support for Getsmart Token"
+categories:
+  - Community & Support
+tags:
+  - community-support
+  - overview
 ---
 
 # Community & Support

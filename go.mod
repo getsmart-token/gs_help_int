@@ -3,8 +3,6 @@ module github.com/google/docsy-example
 go 1.12
 
 require (
-	github.com/FortAwesome/Font-Awesome v0.0.0-20240402185447-c0f460dca7f7 // indirect
-	github.com/google/docsy v0.10.0 // indirect
+	github.com/google/docsy v0.11.1-0.20250428233416-f4ea6a1ebdef // indirect
 	github.com/google/docsy/dependencies v0.7.2 // indirect
-	github.com/twbs/bootstrap v5.3.3+incompatible // indirect
 )

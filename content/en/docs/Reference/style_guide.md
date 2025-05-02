@@ -1,3 +1,11 @@
+---
+categories:
+  - Reference
+tags:
+  - reference
+  - style
+  - guide
+---
 [Skip to content](#content "Skip to content"){.skip-link
 .screen-reader-text role="link"}
 

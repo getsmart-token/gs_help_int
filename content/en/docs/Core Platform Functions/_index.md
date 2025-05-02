@@ -2,6 +2,11 @@
 title: "Core Platform Functions"
 description: "Overview of the main functionalities of our blockchain-based achievement system"
 weight: 1
+categories:
+  - Core Platform Functions
+tags:
+  - core-platform-functions
+  - overview
 ---
 
 Our platform leverages the Polygon network and Metakeep solution to provide a seamless, blockchain-based achievement system. Here are the core functions:

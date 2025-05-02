@@ -4,6 +4,13 @@ linkTitle: "Blue-Green Workflow"
 weight: 30
 description: >
   Blue-Green deployment strategy for the GetSmart Token Project's Internet Architecture.
+categories:
+  - Deployment
+tags:
+  - deployment
+  - blue
+  - green
+  - workflow
 ---
 
 Blue-Green deployment is a technique that reduces downtime and risk by running two identical production environments called Blue and Green.
