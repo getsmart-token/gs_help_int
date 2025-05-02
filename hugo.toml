@@ -1,6 +1,7 @@
 baseURL = "/"
 title = "GetSmart Help Internal"
 
+timeout = "120s"
 # Language settings
 contentDir = "content/en"
 defaultContentLanguage = "en"
@@ -71,11 +72,10 @@ privacy_policy = "https://getstoken.org/privacy"
 version_menu = "Releases"
 archived_version = false
 version = "0.0"
-url_latest_version = "https://help.getstoken.org"
+url_latest_version = "/"
 github_repo = "https://github.com/getsmart-token/gs_help_int"
 github_project_repo = "https://github.com/getsmart-token/"
 github_branch = "main"
-algolia_docsearch = false
 offlineSearch = true
 
 # Include custom CSS for site styling
@@ -87,7 +87,7 @@ breadcrumb_disable = false
 footer_about_enable = false
 navbar_logo = true
 navbar_translucent_over_cover_disable = false
-sidebar_menu_compact = false
+sidebar_menu_compact = true
 sidebar_search_disable = false
 
 [params.ui.navbar_logo_image]
