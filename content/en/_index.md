@@ -7,16 +7,16 @@ date: 2024-09-05T14:44:38.383Z
 {{< blocks/cover title="Welcome to the GetSmart Token Internal Help Center" image_anchor="top" height="full" >}}
 <p class="lead mt-5">Your central resource for GetSmart Token development, deployment, and ongoing support.</p>
 <p class="mt-3">Quick links to essential internal resources:</p>
-<a class="btn btn-lg btn-primary me-3 mb-4" href="/development/">
+<a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/getting-started/">
   Development Guidelines <i class="fas fa-code ms-2"></i>
 </a>
-<a class="btn btn-lg btn-info me-3 mb-4" href="/deployment/">
+<a class="btn btn-lg btn-info me-3 mb-4" href="/docs/deployment/">
   Deployment Procedures <i class="fas fa-rocket ms-2"></i>
 </a>
-<a class="btn btn-lg btn-warning me-3 mb-4" href="/maintenance/">
+<a class="btn btn-lg btn-warning me-3 mb-4" href="/docs/testing/">
   Maintenance & Monitoring <i class="fas fa-wrench ms-2"></i>
 </a>
-<a class="btn btn-lg btn-success me-3 mb-4" href="/support/">
+<a class="btn btn-lg btn-success me-3 mb-4" href="/docs/community--support/">
   Support & Troubleshooting <i class="fas fa-life-ring ms-2"></i>
 </a>
 {{< blocks/link-down color="info" >}}
@@ -24,15 +24,15 @@ date: 2024-09-05T14:44:38.383Z
 
 {{% blocks/section color="dark" type="row" %}}
 
-{{% blocks/feature icon="fas fa-book" title="Technical Specifications" url="/specs/" %}}
+{{% blocks/feature icon="fas fa-book" title="Technical Specifications" url="/docs/reference/" %}}
 Detailed technical documentation and API references.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fas fa-tools" title="Development Tools & Libraries" url="/tools/" %}}
+{{% blocks/feature icon="fas fa-tools" title="Development Tools & Libraries" url="/docs/" %}}
 Links to SDKs, libraries, and helpful development utilities.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fas fa-network-wired" title="Network Information" url="/networks/" %}}
+{{% blocks/feature icon="fas fa-network-wired" title="Network Information" url="/docs/blockchain-integration/" %}}
 Details about testnets, mainnet, and contract addresses.
 {{% /blocks/feature %}}
 
@@ -47,6 +47,6 @@ Details about testnets, mainnet, and contract addresses.
   <li><i class="fas fa-exclamation-triangle text-danger me-2"></i> [Date] - Important Security Audit Findings</li>
 </ul>
 <div class="text-center mt-4">
-  <a class="btn btn-outline-light" href="/internal-updates/">View All Internal Updates <i class="fas fa-newspaper ms-2"></i></a>
+  <a class="btn btn-outline-light" href="/docs/">View All Internal Updates <i class="fas fa-newspaper ms-2"></i></a>
 </div>
 {{% /blocks/section %}}
