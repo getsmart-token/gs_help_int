@@ -72,9 +72,9 @@ We use GitHub Actions for our CI/CD pipeline:
 
 ## Bug Reporting and Tracking
 
-- Use JIRA for bug tracking
+- Report bugs via [GitHub Issues](https://github.com/getsmart-token/getsmart-web/issues)
 - Include detailed steps to reproduce, expected vs. actual results, and relevant logs
-- Assign appropriate severity and priority levels
+- Assign appropriate severity and priority labels
 
 ## Test Data Management
 
@@ -98,7 +98,7 @@ Perform regression testing before each major release:
 
 ## Documentation
 
-- Keep test plans and cases up-to-date in the internal [Help documentation (this site)](/docs/)
+- Keep test plans and cases up-to-date in [Help documentation (this site)](/docs/)
 - Document all testing procedures and tools
 - Maintain a changelog of test suite modifications
 

@@ -90,7 +90,7 @@ Sponsors are employers, NGOs, churches, donors, or anyone who wants to recognise
 ### Repositories
 
 - **Main site**: [github.com/getsmart-token/getsmart-web](https://github.com/getsmart-token/getsmart-web)
-- **AI agent**: [github.com/getsmart-token/gemma_edge](https://github.com/getsmart-token/gemma_edge)
+- **AI agent**: [github.com/getsmart-token/gemma_airgap](https://github.com/getsmart-token/gemma_airgap)
 - **Help docs**: [github.com/getsmart-token/gs_help_int](https://github.com/getsmart-token/gs_help_int)
 
 ### Local Development
