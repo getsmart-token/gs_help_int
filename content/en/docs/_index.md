@@ -2,7 +2,8 @@
 title: "GetSmart Token Help"
 linkTitle: "Help"
 weight: 20
-description: "Summary of key resources and information for GetSmart Token"
+description: "Central documentation hub for the GetSmart Token platform"
+date: 2026-05-26T00:00:00.000Z
 categories:
   - Docs
 tags:
@@ -11,65 +12,94 @@ tags:
 ---
 
 {{% pageinfo %}}
-This page provides a comprehensive overview of the GetSmart Token platform, including links to detailed documentation, API references, deployment information, testing procedures, and community resources. 
-
-Public URL: https://help.getstoken.org/
-Internal URL: https://help-int.getstoken.org/
+Public site: [https://getstoken.org](https://getstoken.org)  
+Help center: [https://help.getstoken.org](https://help.getstoken.org)  
+Contact: [hello@getstoken.org](mailto:hello@getstoken.org)
 {{% /pageinfo %}}
 
 # GetSmart Token Help Center
 
-Welcome to the GetSmart Token Help Center. This page serves as a central hub for all the information you need to understand, use, and contribute to the GetSmart Token ecosystem.
+Welcome to the GetSmart Token documentation hub. GetSmart is operated by **Digital Financial Aid Corporation**, a 501(c)(3) nonprofit (IRS EIN 88-3868816), providing free independent education, verified skill credentials, and scholarship rewards to workers and learners worldwide.
+
+## Platform Overview
+
+| Component | Details |
+|---|---|
+| **Frontend** | [getstoken.org](https://getstoken.org) — Next.js 15 on Cloudflare Pages |
+| **AI Agent** | [getstoken.org/agent](https://getstoken.org/agent) — Gemma AirGap Terminal (Google Gemma 4) |
+| **Course** | [getstoken.org/course](https://getstoken.org/course) — Agents & Assets: From Resistance to Renaissance |
+| **Chatbot** | Cloudflare Worker at `getsmart-chatbot.multipleintelligencesuk.workers.dev` |
+| **Blockchain** | Base network (Coinbase) |
+| **Token** | $GETS — non-tradable utility token, issued on Base |
+| **Wallet** | Coinbase Wallet (no MetaMask / Polygon required) |
 
 ## Key Resources
 
-### 1. API Documentation
+### 1. User Guide
 
-Our API allows developers to integrate our token and badge system into their applications. 
+Step-by-step guide for learners and sponsors using the GetSmart platform.
 
-- [API Documentation](https://help-int.getstoken.org/docs/api-documentation/)
+- [User Guide](/docs/user-guide/)
+- Enroll in the Agents & Assets course: [getstoken.org/course](https://getstoken.org/course)
+- Wallet setup: Coinbase Wallet on the Base network
+- Badge applications and $GETS token claiming
+
+### 2. Badge System
+
+How credential badges and $GETS tokens work.
+
+- [Badge System](/docs/badge-system/)
+- Badges are NFTs (ERC-721) on the Base network
+- $GETS is ERC-20, non-tradable, used as a learning reward
+- Badge verification is on-chain via BaseScan
+
+### 3. Blockchain Integration
+
+Technical details about the Base network integration.
+
+- [Blockchain Integration](/docs/blockchain-integration/)
+- Network: **Base** (not Polygon — the platform migrated from Polygon in 2024)
+- Explorer: [basescan.org](https://basescan.org)
+- Wallet: Coinbase Wallet
+
+### 4. API Documentation
+
+- [API Documentation](/docs/api-documentation/)
 - Base URL: `https://api.getstoken.org/v1`
-- [Authentication guide](https://help-int.getstoken.org/docs/api-documentation/#authentication)
-- [Rate limiting information](https://help-int.getstoken.org/docs/api-documentation/#rate-limiting)
+- Authentication, rate limiting, and endpoint reference
 
-### 2. Testing
+### 5. Deployment
 
-We maintain rigorous testing standards to ensure the reliability and security of our platform.
+The platform runs on Cloudflare Pages with Cloudflare Workers for serverless functions.
 
-- [Testing Guidelines](https://help-int.getstoken.org/docs/testing/)
-- Types of testing: Unit, Integration, E2E, Performance, Security
-- [CI/CD pipeline information](https://help-int.getstoken.org/docs/testing/#continuous-integrationcontinuous-deployment-cicd)
+- [Deployment Procedures](/docs/deployment/)
+- Frontend: Cloudflare Pages (automatic deployments from GitHub `main`)
+- Chatbot: Cloudflare Worker
+- Build: Next.js 15 + `@cloudflare/next-on-pages`
 
-### 3. Deployment
+### 6. Community & Support
 
-Our deployment process leverages DigitalOcean for the API and Vercel for the frontend.
-
-- [Deployment Process](https://help-int.getstoken.org/docs/deployment/)
-- API Deployment: DigitalOcean
-- Frontend Deployment: Vercel
-- [GitHub Actions workflow](https://help-int.getstoken.org/docs/deployment/#github-actions-workflow)
-
-### 4. Community & Support
-
-We offer various channels for community engagement and support.
-
-- [Community & Support Resources](https://help-int.getstoken.org/docs/community-support/)
-- [Support Ticket System](https://support.getstoken.com)
-- [Developer Resources](https://help-int.getstoken.org/docs/community-support/#developer-resources)
+- [Community & Support](/docs/community--support/)
+- Email: [hello@getstoken.org](mailto:hello@getstoken.org)
+- GitHub: [github.com/getsmart-token](https://github.com/getsmart-token)
+- Twitter/X: [@GetsToken](https://x.com/GetsToken)
+- YouTube: [@GetSmartToken](https://www.youtube.com/@GetSmartToken)
 
 ## Quick Links
 
-- [User Guide](https://help-int.getstoken.org/docs/user-guide/)
-- [API Reference](https://help-int.getstoken.org/docs/api/)
-- [FAQs](https://help-int.getstoken.org/faq/)
-- [Community Forums](https://community.getstoken.org)
-- [GitHub Repository](https://github.com/getsmart-token/)
+- [Getting Started](/docs/getting-started/)
+- [User Guide](/docs/user-guide/)
+- [Badge System](/docs/badge-system/)
+- [API Reference](/docs/api-documentation/)
+- [Security & Privacy](/docs/security--privacy/)
+- [GitHub Repositories](https://github.com/getsmart-token/)
+- [Contact Support](mailto:hello@getstoken.org)
 
-## Getting Started
+## About the Organization
 
-1. Review the [API Documentation](https://help-int.getstoken.org/docs/api-documentation/) to understand our token and badge system.
-2. Set up your development environment and obtain API keys.
-3. Explore our [SDKs and Libraries](https://help-int.getstoken.org/docs/community-support/#sdks-and-libraries) for easier integration.
-4. Join our [Discord community](https://discord.gg/getsmarttoken) to connect with other developers and get support.
+**Digital Financial Aid Corporation**  
+501(c)(3) Tax-Exempt Nonprofit · IRS EIN 88-3868816  
+7901 4th St. N., Saint Petersburg, FL 33702  
++1 (786) 860-9864 · [hello@getstoken.org](mailto:hello@getstoken.org)
 
-For any additional help or inquiries, please don't hesitate to [contact our support team](https://support.getstoken.com).
+$GETS is a non-tradable utility token issued solely to recognise educational achievement. It is not listed on any exchange and does not constitute an investment or financial instrument.

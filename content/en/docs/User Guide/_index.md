@@ -1,7 +1,7 @@
 ---
 title: "User Guide"
-date: 2025-05-02
-description: "An introduction to GetSmart Token digital badges and their features."
+date: 2026-05-26T00:00:00.000Z
+description: "How to use the GetSmart Token platform as a learner or sponsor."
 categories:
   - User Guide
 tags:
@@ -11,53 +11,123 @@ tags:
   - overview
 ---
 
-# Introduction to GetSmart Token
+# User Guide — GetSmart Token
 
-Welcome to the GetSmart Token platform! This guide provides an overview of how to use GetSmart to create, issue, apply for, and receive verifiable achievement badges backed by GETS tokens on the Polygon blockchain.
+Welcome to the GetSmart Token platform. This guide covers everything a learner or sponsor needs to use GetSmart effectively.
+
+---
 
 ## What is GetSmart Token?
 
-GetSmart allows individuals and organizations ("Sponsors") to create digital badges (NFTs) representing various achievements, from formal education milestones to informal learning and community contributions. These badges are secured on the blockchain, providing a permanent and verifiable record. Earners can receive these badges along with GETS tokens, which can be held, exchanged, or staked.
+GetSmart is a free, nonprofit education platform run by **Digital Financial Aid Corporation** (501(c)(3), IRS EIN 88-3868816). It awards **$GETS** — a non-tradable utility token on the **Base network** — to learners who complete verified skill challenges.
 
-The platform aims to support education, recognize diverse forms of learning, and contribute to a regenerative economy for growth.
+> **$GETS is not a tradable cryptocurrency.** It is a digital record of educational achievement, issued on-chain to verify your learning — not for speculation or investment.
 
-## How it Works (The 4 Steps)
+---
 
-The core process involves four main steps:
+## Wallet Setup — Coinbase Wallet on Base
 
-1.  **Sponsor Creates:** A Sponsor designs a badge, defining its purpose, criteria, evidence requirements, and the number of GETS tokens attached.
-2.  **Earner Applies:** An Earner finds a badge they qualify for (either publicly listed or via a private link) and submits an application with the required evidence.
-3.  **Sponsor Approves/Dismisses:** The Sponsor reviews applications and approves or dismisses them based on the defined criteria.
-4.  **Earner Claims:** Once approved, the Earner must claim their badge and associated tokens within 90 days to finalize the process and receive the assets in their wallet.
+GetSmart uses the **Base network** (Ethereum Layer 2 by Coinbase). You need a **Coinbase Wallet** — not MetaMask, not a Polygon wallet.
 
-## Getting Started: MetaMask Wallet
+> **Migrated from Polygon:** Earlier versions of the platform used Polygon (MATIC). The platform now runs entirely on Base. If you had a Polygon-era account, contact [hello@getstoken.org](mailto:hello@getstoken.org) to migrate.
 
-To interact with the GetSmart platform, both Sponsors and Earners need an Ethereum/Polygon compatible crypto wallet, such as MetaMask.
+1. Download **Coinbase Wallet** at [coinbase.com/wallet](https://www.coinbase.com/wallet)
+2. Create your wallet — your `0x...` address is your on-chain identity
+3. Connect your wallet to your GetSmart Dashboard
 
-*   **Setup:** Follow the instructions at [https://getstoken.org/what-is-metamask-free-and-easy-to-use-crypto-wallet/](https://getstoken.org/what-is-metamask-free-and-easy-to-use-crypto-wallet/) to set up your wallet.
-*   **Polygon Network:** Ensure your MetaMask wallet is connected to the Polygon network. Instructions for adding the network are available in the full manual or on polygonscan.com.
-*   **Multiple Accounts:** MetaMask allows creating multiple accounts within one wallet, useful for managing badges for different individuals (e.g., minors).
+---
+
+## For Learners (Earners)
+
+### Enrolling
+
+1. Visit [getstoken.org/course](https://getstoken.org/course)
+2. Choose your enrollment option:
+   - **Option 1 — Earn $GETS Tokens**: Full course with badge claims (requires GetSmart account + Coinbase Wallet)
+   - **Option 2 — Try the Gemma AirGap Agent**: Live AI demo, no account needed → [getstoken.org/agent](https://getstoken.org/agent)
+
+### Completing a Mission
+
+Each module delivers:
+- A **CitiZen AI guide** who walks you through the mission
+- A **hands-on challenge** using Google Gemma (AI) and your Coinbase Wallet
+- A **submission form** to claim your NFT badge and $GETS tokens
+
+### Submitting Evidence
+
+After completing a mission challenge:
+1. Click the **badge application link** from your mission email
+2. Paste your evidence (Call-Sign, wallet address, transaction hash, etc.) into the form
+3. Submit — your application is reviewed and approved
+4. **Claim within 90 days** via your GetSmart Dashboard to receive the NFT badge and $GETS
+
+### Viewing Your Badges
+
+- Log in to your GetSmart Dashboard at [getstoken.org](https://getstoken.org)
+- View and download your NFT badge images (PNG) to share on LinkedIn, email, etc.
+- Anyone can verify your badge on-chain using your **BaseScan** link or the embedded QR code
+
+### Verifying Badges
+
+Every badge can be verified publicly on [basescan.org](https://basescan.org) using the transaction hash or the badge's contract address. No account needed to verify.
+
+---
 
 ## For Sponsors
 
-As a Sponsor, you can:
+Sponsors are organisations or individuals who fund and award credential badges to learners.
 
-*   **Define Badges:** Create badges for any achievement, specifying title, description, award criteria, and required evidence (e.g., links to documents, certificates).
-*   **Customize:** Use custom images or media (requires holding 10+ GETS tokens).
-*   **Set Tokenomics:** Decide the number of badges to issue, the number of GETS tokens per badge (at least 1 GETS per badge is required for creation), and an application expiry date.
-*   **Publish:** Make badges public for anyone to apply or private via a shareable link.
-*   **Manage Applications:** Review submitted applications and approve or reject them through your dashboard.
-*   **Fund:** Acquire GETS tokens by swapping MATIC on the platform.
+### What Sponsors Can Do
 
-## For Earners
+- **Create badges** with custom title, description, criteria, and evidence requirements
+- **Set $GETS rewards** — the number of tokens attached to each badge approval
+- **Publish** badges publicly or share via private link
+- **Review applications** and approve or dismiss them
+- **Fund badges** by acquiring $GETS tokens
 
-As an Earner, you can:
+### Sponsor Types
 
-*   **Create Profile:** Set up your profile on the GetSmart platform and connect your MetaMask wallet.
-*   **Explore & Apply:** Search for publicly available badges or use private links provided by Sponsors. Submit applications detailing why you qualify and providing the necessary evidence.
-*   **Claim Awards:** Once your application is approved, claim your badge and GETS tokens via your dashboard within 90 days.
-*   **Manage Badges:** View your earned badges (NFTs) on your dashboard. Download badge images (PNG) to share on social media, email, etc.
-*   **Verify:** Anyone can verify the authenticity of your badge using the embedded QR code or GETS code.
-*   **Use Tokens:** Hold, exchange (GETS -> MATIC -> Fiat), or stake your GETS tokens, potentially contributing to the "Student Freedom Award" pool.
+| Audience | Description |
+|---|---|
+| Employers | Award verified worker skills to employees |
+| NGOs | Recognise community and volunteer achievements |
+| Churches | Certificate programmes for congregation members |
+| Donors | Fund learning rewards for underserved learners |
+| Parents | Track and reward children's learning milestones |
+| Educators | Issue verified academic credentials |
 
-For more detailed information, you can also download the full [User Manual (PDF)](/usermanual.pdf).
+Visit your audience page at [getstoken.org/for/](https://getstoken.org/for/) (e.g. `/for/employers`, `/for/ngos`, `/for/churches`).
+
+---
+
+## The $GETS Token
+
+| Property | Value |
+|---|---|
+| **Type** | Non-tradable utility token |
+| **Network** | Base (Ethereum L2) |
+| **Standard** | ERC-20 |
+| **Purpose** | Record educational achievement on-chain |
+| **Exchange listed?** | No — cannot be bought or sold |
+| **Minimum donation** | $0.10 |
+
+$GETS tokens are earned by completing verified learning challenges. They cannot be traded on any exchange. Their sole purpose is to record and verify educational achievement within the GetSmart platform.
+
+---
+
+## Ghost Badge Warning
+
+The Aithority releases fake NFTs designed to look like real GetSmart badges. Two rules:
+
+1. **Verify the contract address** — real badges come from the official GetSmart verified contract only
+2. **Do not interact with unexpected NFTs** — if an NFT appears in your wallet from an unknown sender, do not click or interact with it
+
+---
+
+## Support
+
+- Email: [hello@getstoken.org](mailto:hello@getstoken.org)
+- GitHub issues: [github.com/getsmart-token](https://github.com/getsmart-token)
+- Twitter/X: [@GetsToken](https://x.com/GetsToken)
+
+For legal or compliance questions: [legal@getstoken.org](mailto:legal@getstoken.org)
