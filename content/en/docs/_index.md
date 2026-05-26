@@ -13,7 +13,7 @@ tags:
 
 {{% pageinfo %}}
 Public site: [https://getstoken.org](https://getstoken.org)  
-Help center: [https://help.getstoken.org](https://help.getstoken.org)  
+Help docs: [github.com/getsmart-token/gs_help_int](https://github.com/getsmart-token/gs_help_int)  
 Contact: [hello@getstoken.org](mailto:hello@getstoken.org)
 {{% /pageinfo %}}
 

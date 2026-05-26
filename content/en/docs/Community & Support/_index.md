@@ -45,7 +45,7 @@ GetSmart is operated by **Digital Financial Aid Corporation**, a 501(c)(3) nonpr
 
 | Resource | URL |
 |---|---|
-| Help center | [help.getstoken.org](https://help.getstoken.org) |
+| Help docs (GitHub) | [github.com/getsmart-token/gs_help_int](https://github.com/getsmart-token/gs_help_int) |
 | User Guide | [/docs/user-guide/](/docs/user-guide/) |
 | Badge System | [/docs/badge-system/](/docs/badge-system/) |
 | API Reference | [/docs/api-documentation/](/docs/api-documentation/) |

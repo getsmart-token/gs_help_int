@@ -2,68 +2,75 @@
 title: "Internet Architecture"
 linkTitle: "Internet Architecture"
 weight: 20
+date: 2026-05-26T00:00:00.000Z
 description: >
-  Internet Architecture of the GetSmart Token Project.
+  Current internet architecture and URL structure of the GetSmart Token platform.
 categories:
   - Deployment
 tags:
   - deployment
-  - internet
   - architecture
 ---
-## GetSmart Token Digital Presence
+
+## GetSmart Token Platform Architecture
 
 ```mermaid
 graph TD
-    title[GETS Token Project URLs]
-    style title fill:#f9f,stroke:#333,stroke-width:2px
-
     A[getstoken.org]
-    A --> B[www.getstoken.org<br>Marketing site]
-    A --> C[help.getstoken.org<br>Documentation site]
-    A --> D[app.getstoken.org<br>Frontend]
-    A --> E[dev.getstoken.org<br>API backend]
-    A --> F[dev-api.getstoken.org<br>Development API]
-    A --> G[dev-app.getstoken.org<br>Development Frontend]
-
-    title --> A
-
-
+    A --> B[getstoken.org<br>Main site — Next.js 15<br>Cloudflare Pages]
+    A --> C[getstoken.org/agent<br>Gemma AirGap Agent<br>Edge Worker]
+    A --> D[getstoken.org/course<br>Course enrollment]
+    A --> E[api.getstoken.org/v1<br>REST API]
+    A --> F[github.com/getsmart-token/gs_help_int<br>Help documentation — Hugo on Netlify]
 ```
 
 ```mermaid
 graph TD
-    title[app.getstoken.org]
-    style title fill:#f9f,stroke:#333,stroke-width:2px
+    User -->|HTTPS| CF[Cloudflare Pages<br>getstoken.org]
+    CF -->|Edge Worker| API[Next.js API Routes<br>/api/chat · /api/auth · /api/user]
+    API -->|Server-side| Gemini[Google Gemini API<br>gemma-4-26b-a4b-it]
+    API -->|Auth| CB[Coinbase OAuth]
+    API -->|Data| MDB[MongoDB Atlas]
+    API -->|Tokens/Badges| Base[Base Network<br>Ethereum L2]
 
-    A[User] -->|Accesses| B[Frontend SPA]
-    A -->|Reads| I[Documentation Site]
-    B -->|API Calls| C[API Gateway]
-    C -->|Routes Requests| D[Backend Services]
-    subgraph "Digital Ocean"
-        D -->|Reads/Writes| E[MongoDB]
-        D -->|Interacts| F[Blockchain Node]
-        D -->|Uploads/Retrieves| G[IPFS Node]
+    User -->|Air-gap mode| Local[Local Browser<br>Gemma 4 E2B via WebGPU<br>Zero data leaves device]
+
+    subgraph Cloudflare
+        CF
+        API
+        CW[Chatbot Worker<br>getsmart-chatbot.workers.dev]
     end
-    subgraph "External Services"
-        F
-        G
-        H[Email Service]
+
+    subgraph Google
+        Gemini
     end
-    D -->|Sends Emails| H
-    subgraph "Vercel"
-        B
+
+    subgraph Blockchain
+        Base
     end
-    subgraph "Netlify"
-        I
-    end
-    style B fill:#f9f,stroke:#333,stroke-width:2px
-    style D fill:#bbf,stroke:#333,stroke-width:2px
-    style E fill:#dfd,stroke:#333,stroke-width:2px
-    style F fill:#fdd,stroke:#333,stroke-width:2px
-    style G fill:#ddf,stroke:#333,stroke-width:2px
-    style I fill:#ffd,stroke:#333,stroke-width:2px
 ```
 
+## Active URLs
 
-The internal documentation site (`devdocs.getstoken.org`) is a Hugo static site. It is automatically built and deployed from the `main` branch of the GitHub repository (`getsmart-token/gs_help_int`) to Cloudflare Pages.
+| URL | Description | Host |
+|---|---|---|
+| [getstoken.org](https://getstoken.org) | Main site | Cloudflare Pages |
+| [getstoken.org/agent](https://getstoken.org/agent) | Gemma AirGap Agent terminal | Cloudflare Pages |
+| [getstoken.org/course](https://getstoken.org/course) | Course enrollment | Cloudflare Pages |
+| [api.getstoken.org/v1](https://api.getstoken.org/v1) | REST API | Cloudflare Workers |
+| [github.com/getsmart-token/gs_help_int](https://github.com/getsmart-token/gs_help_int) | Help documentation | GitHub / Netlify |
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | Next.js 15 (App Router) |
+| Hosting | Cloudflare Pages |
+| Serverless | Cloudflare Edge Workers |
+| AI (cloud) | Google Gemma 4 via Gemini API |
+| AI (local) | LiteRT / MediaPipe / WebGPU in-browser |
+| Auth | Coinbase OAuth |
+| Database | MongoDB Atlas |
+| Blockchain | Base network (Ethereum L2) |
+| Chatbot | Cloudflare Workers |
+| Docs | Hugo + Docsy on Netlify |

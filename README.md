@@ -1,6 +1,6 @@
 # GetSmart Token — Help Documentation
 
-This repository contains the source for the **GetSmart Token Help Center** at [help.getstoken.org](https://help.getstoken.org), built with [Hugo](https://gohugo.io) and the [Docsy](https://www.docsy.dev) theme.
+This repository contains the source for the **GetSmart Token Help Center** at [github.com/getsmart-token/gs_help_int](https://github.com/getsmart-token/gs_help_int), built with [Hugo](https://gohugo.io) and the [Docsy](https://www.docsy.dev) theme.
 
 GetSmart is operated by **Digital Financial Aid Corporation**, a 501(c)(3) nonprofit (IRS EIN 88-3868816), providing free independent education and verified skill credentials to workers and learners worldwide.
 
@@ -11,7 +11,7 @@ GetSmart is operated by **Digital Financial Aid Corporation**, a 501(c)(3) nonpr
 | Main site | [getstoken.org](https://getstoken.org) |
 | Gemma AirGap Agent | [getstoken.org/agent](https://getstoken.org/agent) |
 | Course | [getstoken.org/course](https://getstoken.org/course) |
-| Help center | [help.getstoken.org](https://help.getstoken.org) |
+| Help center | [github.com/getsmart-token/gs_help_int](https://github.com/getsmart-token/gs_help_int) |
 
 ## Documentation Sections
 
