@@ -2,59 +2,80 @@
 title: "Community & Support"
 linkTitle: "Community & Support"
 weight: 10
-description: "Resources for community engagement and support for Getsmart Token"
+date: 2026-05-26T00:00:00.000Z
+description: "How to get help and connect with the GetSmart Token community."
 categories:
   - Community & Support
 tags:
-  - community-support
-  - overview
+  - community
+  - support
+  - contact
 ---
 
 # Community & Support
 
-At Getsmart Token, we believe in the power of community and providing excellent support to our users and developers. This page outlines our community resources and support channels.
+GetSmart is operated by **Digital Financial Aid Corporation**, a 501(c)(3) nonprofit (EIN 88-3868816). We provide free independent education and are committed to supporting our learners, sponsors, and developers.
 
-## Community Channels
+---
 
-### 1. Twitter
+## Contact
 
-Follow us on Twitter for the latest news, updates, and community highlights.
+| Channel | Address |
+|---|---|
+| **General** | [hello@getstoken.org](mailto:hello@getstoken.org) |
+| **Legal / Compliance** | [legal@getstoken.org](mailto:legal@getstoken.org) |
+| **Security** | [security@getstoken.org](mailto:security@getstoken.org) |
+| **Phone** | +1 (786) 860-9864 |
+| **Address** | 7901 4th St. N., Saint Petersburg, FL 33702 |
 
-- [@GetsmartToken](https://twitter.com/GetsmartToken)
+---
 
-### 2. GitHub
+## Social & Community
 
-Our open-source projects and examples are hosted on GitHub. Contribute, report issues, or explore our code.
+| Platform | Link |
+|---|---|
+| **Twitter / X** | [@GetsToken](https://x.com/GetsToken) |
+| **YouTube** | [@GetSmartToken](https://www.youtube.com/@GetSmartToken) |
+| **LinkedIn** | [linkedin.com/company/104642526](https://www.linkedin.com/company/104642526) |
+| **GitHub** | [github.com/getsmart-token](https://github.com/getsmart-token) |
 
-- [Getsmart Token GitHub Organization](https://github.com/getsmarttoken)
+---
 
+## Documentation
 
-## Support Resources
+| Resource | URL |
+|---|---|
+| Help center | [help.getstoken.org](https://help.getstoken.org) |
+| User Guide | [/docs/user-guide/](/docs/user-guide/) |
+| Badge System | [/docs/badge-system/](/docs/badge-system/) |
+| API Reference | [/docs/api-documentation/](/docs/api-documentation/) |
+| Getting Started | [/docs/getting-started/](/docs/getting-started/) |
 
-### 1. Documentation
+---
 
-Comprehensive documentation for users and developers:
+## Course & Platform
 
-- [User Guide](https://help.getsmarttoken.org/user-guide)
-- [API Reference](https://help-int.getsmarttoken.org/docs/api-documentation)
-- [Developer Documentation](https://github.com/getsmart-token)
+| Resource | URL |
+|---|---|
+| Main site | [getstoken.org](https://getstoken.org) |
+| Course enrollment | [getstoken.org/course](https://getstoken.org/course) |
+| Gemma AirGap Agent | [getstoken.org/agent](https://getstoken.org/agent) |
 
-### 2. Support Ticket System
+---
 
-For issues that require personalized attention, use our support ticket system:
+## Reporting Issues
 
-- [Submit a Support Ticket](https://support.getsmarttoken.com)
+- **Platform bugs**: [github.com/getsmart-token/getsmart-web/issues](https://github.com/getsmart-token/getsmart-web/issues)
+- **Documentation errors**: [github.com/getsmart-token/gs_help_int/issues](https://github.com/getsmart-token/gs_help_int/issues)
+- **Security vulnerabilities**: [security@getstoken.org](mailto:security@getstoken.org) — see [/.well-known/security.txt](https://getstoken.org/.well-known/security.txt)
 
-Response times:
-- Critical issues: Within 2 hours
-- General inquiries: Within 1 business day
-)
+---
 
-## Developer Resources
+## About the Organization
 
-### 1. API Status Page (Coming Soon!)
+**Digital Financial Aid Corporation**
+501(c)(3) Tax-Exempt Nonprofit · IRS EIN 88-3868816
+7901 4th St. N., Saint Petersburg, FL 33702
++1 (786) 860-9864 · [hello@getstoken.org](mailto:hello@getstoken.org)
 
-Check the current status and uptime of our API:
-
-- [Getsmart Token API Status](https://status.getsmarttoken.com)
-
+$GETS is a non-tradable utility token issued solely to recognise educational achievement. It is not listed on any exchange and does not constitute an investment or financial instrument.

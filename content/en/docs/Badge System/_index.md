@@ -1,51 +1,111 @@
 ---
 title: "Badge System"
 linkTitle: "Badge System"
-description: "Overview of the NFT-based badge system for recognizing achievements"
+description: "How NFT credential badges and $GETS tokens work on the GetSmart platform."
 weight: 3
+date: 2026-05-26T00:00:00.000Z
 categories:
   - Badge System
 tags:
   - badge-system
-  - overview
+  - nft
+  - gets-token
+  - base-network
 ---
 
 # Badge System
 
-Our platform utilizes NFTs on the Polygon network to create a robust and verifiable badge system for recognizing user achievements.
+GetSmart issues **NFT credential badges** (ERC-721) and **$GETS utility tokens** (ERC-20) on the **Base network** to learners who complete verified skill challenges. Every badge is publicly verifiable on-chain.
 
-## Key Features
+---
 
-1. **NFT Badges**: Each badge is a unique NFT, ensuring authenticity and ownership.
-2. **Customizable Criteria**: Sponsors can set specific achievement standards for each badge.
-3. **Automatic Issuance**: Badges are minted and awarded automatically upon meeting criteria.
-4. **Blockchain Verification**: All badges are verifiable on the Polygon network.
-5. **Gamification of Achievement**: Support for a sponsor-created arbitrary hierarchy of levels of badges (e.g., Bronze, Silver, Gold).
+## How Badges Work
 
-## Token Requirements and Transactions
+Each of the 10 course modules is a mission. Completing a mission and submitting evidence earns:
 
-- A minimum of 1 GETS token is required to create a badge. This token will be transferred to the earner upon badge issuance.
-- Using a custom image or media file in a badge requires a minimum of 10 GETS tokens.
-- Transaction fees (Gwei) on the Polygon blockchain are typically less than $0.001 MATIC for GETS tokens.
-- The badge issuance process involves four separate transactions recorded on the blockchain, validating the certificate and ensuring its authenticity.
+1. An **NFT badge** (ERC-721) sent to the learner's Coinbase Wallet
+2. A **$GETS token reward** (ERC-20) attached to the badge
 
-## Badge Creation Process
+| Module | CitiZen | Skill | $GETS |
+|---|---|---|---|
+| 1 | The Tech Shaman | Local AI · Privacy | 50 |
+| 2 | The Cypher-Nomad | Sovereign Identity · Base Network | 50 |
+| 3 | The Prompt Whisperer | Edge AI Prompting · Cryptography | 75 |
+| 4 | The Urban Samurai | On-Chain Transparency · BaseScan | 75 |
+| 5 | The Neon Ninja | Air-Gapped AI · Offline Security | 75 |
+| 6 | The Solar Monk | AI Hallucinations · Truth Detection | 75 |
+| 7 | The Tech-Bazaar Trader | NFTs vs Liquid Tokens | 75 |
+| 8 | The Steampunk Scrapper | AI Personas · Math Concepts | 75 |
+| 9 | The Street Artist | DeFi Micro-Transactions | 81 |
+| 10 | The Prime | AI Agent Creation · Community Impact | 369 |
 
-1. Sponsors design badge artwork and metadata.
-2. Achievement criteria are defined and implemented.
-3. Smart contract is deployed for the badge on Polygon.
-4. Badge is made available for earning on the platform.
+**Total: 1,000 $GETS** for completing the full course.
 
-## User Experience
+---
 
-- Users can view available badges and their requirements.
-- Progress towards badge achievements is tracked in real-time.
-- Earned badges are displayed in the user's profile and can be shared externally.
+## $GETS Token
 
-## Important Considerations
+| Property | Value |
+|---|---|
+| **Standard** | ERC-20 |
+| **Network** | Base |
+| **Type** | Non-tradable utility token |
+| **Purpose** | Record educational achievement |
+| **Exchange listed?** | No |
+| **Minimum donation** | $0.10 |
 
-- Ensure sufficient GETS tokens are available before creating or issuing badges.
-- Understand the token requirements and transaction fees to manage resources effectively.
-- Always verify badge details before issuance, as blockchain transactions are irreversible.
+$GETS is not a cryptocurrency for trading or investment. It is a learning reward that records achievement on-chain within the GetSmart platform only.
 
-The Badge System forms the core of our achievement recognition platform, leveraging blockchain technology to create lasting, verifiable records of user accomplishments while ensuring efficient use of GETS tokens and transparent transaction processes.
+---
+
+## Badge Verification
+
+Every badge can be independently verified on [basescan.org](https://basescan.org):
+
+1. Use the **transaction hash** from your Dashboard or badge email
+2. Or scan the **QR code** embedded in your badge PNG
+3. Or search the **contract address** on BaseScan
+
+No account required to verify. Verification is fully public.
+
+---
+
+## For Sponsors
+
+Sponsors (employers, NGOs, churches, donors, educators) can create custom badges:
+
+- Set badge title, description, evidence criteria
+- Define the $GETS reward amount
+- Publish publicly or share via private link
+- Review and approve learner applications
+- Fund badges by acquiring $GETS tokens
+
+### Sponsor Audiences
+
+| Audience | Use Case |
+|---|---|
+| Employers | Verify worker skills |
+| NGOs | Recognise volunteer achievements |
+| Churches | Certificate programmes |
+| Donors | Fund learning for underserved learners |
+| Parents | Track children's learning milestones |
+| Educators | Issue verified academic credentials |
+
+---
+
+## Ghost Badge Warning
+
+The Aithority releases fake NFTs that look like real GetSmart badges.
+
+- **Always verify the contract address** — real badges come from the official GetSmart contract only
+- **Never interact with unexpected NFTs** that appear in your wallet from unknown senders
+- If in doubt, contact [hello@getstoken.org](mailto:hello@getstoken.org)
+
+---
+
+## Claiming Badges
+
+1. Complete a mission challenge and submit evidence via the badge application link
+2. A GetSmart reviewer approves your submission
+3. **Claim within 90 days** via your Dashboard at [getstoken.org](https://getstoken.org)
+4. The NFT badge and $GETS tokens are sent to your Coinbase Wallet on Base

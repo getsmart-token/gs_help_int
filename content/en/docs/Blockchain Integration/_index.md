@@ -1,55 +1,105 @@
 ---
 title: "Blockchain Integration"
 linkTitle: "Blockchain Integration"
-description: "Details on how our platform integrates with the Polygon blockchain"
+description: "Technical details of the Base network integration — wallet, tokens, explorer, and smart contracts."
 weight: 4
+date: 2026-05-26T00:00:00.000Z
 categories:
-  - Blockchain Integration
+  - Blockchain
 tags:
-  - blockchain-integration
-  - overview
+  - base-network
+  - coinbase-wallet
+  - basescan
+  - erc-20
+  - erc-721
 ---
 
 # Blockchain Integration
 
-Our achievement system leverages the Polygon network for secure, efficient, and cost-effective blockchain integration. This integration ensures the authenticity and immutability of user achievements.
+GetSmart Token runs entirely on the **Base network** — Coinbase's Ethereum Layer 2 chain. Base provides fast, low-cost transactions while inheriting Ethereum's security.
 
-## Key Components
+> **Migrated from Polygon:** The platform moved from Polygon (MATIC) to Base in 2024. If you have a Polygon-era account, contact [hello@getstoken.org](mailto:hello@getstoken.org) to migrate.
 
-1. **Polygon Network**: Utilized for its scalability and low transaction costs.
+---
 
-2. **Smart Contracts**: Custom contracts for badge minting and management.
+## Network Details
 
-3. **Metakeep Integration**: Simplifies user onboarding and transaction signing.
+| Property | Value |
+|---|---|
+| **Network** | Base (Ethereum L2) |
+| **Chain ID** | 8453 |
+| **Native gas token** | ETH |
+| **Explorer** | [basescan.org](https://basescan.org) |
+| **RPC** | `https://mainnet.base.org` |
+| **Bridge** | [bridge.base.org](https://bridge.base.org) |
 
-4. **IPFS**: Used for decentralized storage of badge metadata and images.
+---
 
-## Core Functionalities
+## Wallet
 
-### NFT Minting
-- Automated minting process when users earn badges.
-- Each badge is a unique ERC-721 token on Polygon.
+GetSmart uses **Coinbase Wallet** — not MetaMask, not a Polygon wallet.
 
-### Transaction Management
-- Metakeep handles transaction signing, removing the need for users to manage crypto wallets.
-- Gas fees are abstracted away from the end-user experience.
+1. Download at [coinbase.com/wallet](https://www.coinbase.com/wallet)
+2. Create a new wallet and save your recovery phrase securely
+3. Your wallet generates a Base address starting with `0x`
+4. Connect it to your GetSmart Dashboard at [getstoken.org](https://getstoken.org)
 
-### Data Verification
-- All badge issuances and ownership can be verified on-chain.
-- Public APIs for third-party verification of achievements.
+---
 
-### Scalability
-- Polygon's high throughput allows for seamless handling of large-scale badge issuances.
+## $GETS Token (ERC-20)
 
-## Security Measures
+| Property | Value |
+|---|---|
+| **Standard** | ERC-20 |
+| **Network** | Base |
+| **Type** | Non-tradable utility token |
+| **Purpose** | Record educational achievement on-chain |
+| **Exchange listed?** | No — cannot be bought or sold |
 
-- Multi-signature wallets for platform-level transactions.
-- Regular smart contract audits.
-- Implemented best practices for key management and access control.
+$GETS tokens are earned by completing verified learning challenges. They cannot be traded on any exchange. Their sole purpose is to record and verify educational achievement within the GetSmart platform.
 
-## Future Enhancements
+---
 
-- Cross-chain compatibility for badge verification on other networks.
-- Integration with Layer 2 solutions for further scalability.
+## Badge NFTs (ERC-721)
 
-Our blockchain integration forms the backbone of our trustless and transparent achievement system, ensuring that user accomplishments are securely recorded and easily verifiable.
+| Property | Value |
+|---|---|
+| **Standard** | ERC-721 (NFT) |
+| **Network** | Base |
+| **Verification** | Public on [basescan.org](https://basescan.org) |
+| **Format** | Image (PNG) + on-chain metadata |
+
+Each completed module issues an NFT badge to the learner's Coinbase Wallet. Badges are publicly verifiable on BaseScan using the transaction hash or contract address — no account needed.
+
+---
+
+## Verifying a Badge
+
+1. Locate the transaction hash from your GetSmart Dashboard or badge email
+2. Go to [basescan.org](https://basescan.org)
+3. Paste the transaction hash into the search bar
+4. The badge contract, recipient address, and timestamp are all publicly visible
+
+Alternatively, scan the QR code embedded in your badge image — it links directly to the BaseScan record.
+
+---
+
+## Ghost Badge Warning
+
+The Aithority releases fake NFTs designed to look like real GetSmart badges:
+
+- **Verify the contract address** — real badges come from the official GetSmart verified contract only
+- **Do not interact with unexpected NFTs** — if an NFT appears in your wallet from an unknown sender, do not click or interact with it
+
+---
+
+## Developer Reference
+
+Contact [hello@getstoken.org](mailto:hello@getstoken.org) for verified contract addresses.
+
+### Useful Links
+
+- Base network docs: [docs.base.org](https://docs.base.org)
+- BaseScan explorer: [basescan.org](https://basescan.org)
+- Base bridge: [bridge.base.org](https://bridge.base.org)
+- Coinbase Wallet: [coinbase.com/wallet](https://www.coinbase.com/wallet)

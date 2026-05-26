@@ -1,75 +1,96 @@
 ---
 title: "Security & Privacy"
 linkTitle: "Security & Privacy"
-description: "Overview of our security measures and privacy policies"
+description: "Security practices, privacy policy, and responsible disclosure for the GetSmart Token platform."
 weight: 7
+date: 2026-05-26T00:00:00.000Z
 categories:
   - Security & Privacy
 tags:
-  - security-privacy
-  - overview
+  - security
+  - privacy
+  - gdpr
 ---
 
 # Security & Privacy
 
-At Get Smart Token, we prioritize the security of our platform and the privacy of our users. As a member of the <a href="https://icobc.net/" target="_blank">International Council on Badges and Credentials</a>, we adhere to industry-best practices and standards for digital credentialing.
+GetSmart Token is operated by **Digital Financial Aid Corporation**, a 501(c)(3) nonprofit committed to protecting learner data and platform integrity.
+
+---
 
 ## Security Measures
 
-1. **Blockchain Security**: 
-   - Utilization of Polygon's secure and efficient blockchain infrastructure
-   - Smart contract audits conducted regularly by third-party security firms
+### Infrastructure
 
-2. **User Authentication**:
-   - Multi-factor authentication (MFA) for account access
-   - Secure password policies enforced
+- **Hosting**: Cloudflare Pages (DDoS protection, WAF, edge network)
+- **API**: Edge Worker functions with no persistent server-side processes
+- **Database**: MongoDB Atlas with encryption at rest and in transit
+- **Auth**: Coinbase OAuth — we never store passwords
 
-3. **Data Encryption**:
-   - All data in transit and at rest is encrypted using industry-standard protocols
-   - End-to-end encryption for sensitive communications
+### Blockchain
 
-4. **Regular Security Audits**:
-   - Periodic penetration testing and vulnerability assessments
-   - Continuous monitoring for potential security threats
+- **Network**: Base (Ethereum L2) — immutable public ledger for badge records
+- **Contracts**: Smart contract addresses published and verifiable on [basescan.org](https://basescan.org)
+- **No private keys stored**: The platform never holds user wallet keys
 
-5. **Secure Key Management**:
-   - Hardware Security Modules (HSMs) for storing critical cryptographic keys
-   - Strict access controls for key management systems
+### AI Agent
 
-## Privacy Policies
+- **Cloud mode**: API key held server-side in Cloudflare Edge Worker — never exposed to the client browser
+- **Local / Air-Gap mode (Module 5)**: The Gemma 4 model runs entirely in the user's browser via WebGPU. Zero data leaves the device during local inference.
 
-1. **Data Collection**:
-   - We collect only necessary information for platform functionality
-   - Users have control over what personal data is shared publicly
+### Data in Transit
 
-2. **Data Usage**:
-   - User data is never sold to third parties
-   - Data is used solely for platform operations and improvements
+- All traffic served over HTTPS / TLS 1.3
+- API calls to Google Gemini API made server-side only
 
-3. **Transparency**:
-   - Clear communication about what data is collected and how it's used
-   - Regular privacy policy updates with user notifications
+---
 
-4. **User Rights**:
-   - Right to access personal data
-   - Right to request data deletion (subject to legal requirements)
+## Privacy Policy
 
-5. **GDPR Compliance**:
-   - Adherence to General Data Protection Regulation (GDPR) standards
-   - Appointed Data Protection Officer for oversight
+### What We Collect
 
-## Credential Integrity
+- Name and email address (for course enrollment and badge applications)
+- Coinbase Wallet address (to issue NFT badges and $GETS tokens)
+- Learning progress (which missions completed, evidence submitted)
 
-As a member of the International Council on Badges and Credentials, we ensure:
+### What We Do Not Collect
 
-- Verifiable and tamper-proof digital credentials
-- Adherence to open standards for digital badges
-- Interoperability with other credentialing systems
+- Passwords (handled entirely by Coinbase OAuth)
+- Payment card information
+- Biometrics or sensitive personal data beyond what's listed above
 
-## Ongoing Commitment
+### How We Use Your Data
 
-We are committed to continuously improving our security measures and privacy policies. Regular updates and enhancements are made to address emerging threats and evolving privacy concerns.
+- To issue NFT badges and $GETS tokens to your wallet
+- To send course mission emails
+- To review badge applications
+- We do **not** sell data to third parties
 
-For any security concerns or privacy inquiries, please contact our dedicated security team at security@getstoken.org.
+### User Rights (GDPR)
 
-Remember, your trust is our most valued asset, and we strive to maintain it through rigorous security practices and respect for your privacy.
+- Right to access your personal data
+- Right to request data deletion (subject to on-chain records, which are immutable)
+- Right to data portability
+- Requests: [hello@getstoken.org](mailto:hello@getstoken.org)
+
+---
+
+## Responsible Disclosure
+
+If you discover a security vulnerability in the GetSmart platform:
+
+1. **Do not** publish it publicly before notifying us
+2. Email [security@getstoken.org](mailto:security@getstoken.org) with details
+3. See [getstoken.org/.well-known/security.txt](https://getstoken.org/.well-known/security.txt)
+
+We aim to acknowledge reports within 48 hours and resolve critical issues within 30 days.
+
+---
+
+## Ghost Badge Warning
+
+Third parties ("the Aithority") release fake NFTs that look like official GetSmart badges:
+
+- **Always verify the contract address** on BaseScan before trusting any badge
+- **Do not interact with unexpected NFTs** in your wallet from unknown senders
+- Real GetSmart badges come only from the official verified contract address — contact [hello@getstoken.org](mailto:hello@getstoken.org) to confirm

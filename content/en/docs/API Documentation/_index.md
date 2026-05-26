@@ -1,96 +1,120 @@
 ---
 title: "API Documentation"
 linkTitle: "API Documentation"
-description: "Overview of the Get Smart Token API"
+description: "REST API reference for the GetSmart Token platform."
 weight: 8
+date: 2026-05-26T00:00:00.000Z
 categories:
   - API Documentation
 tags:
-  - api-documentation
-  - overview
+  - api
+  - developer
+  - rest
 ---
 
 # API Documentation
 
-Welcome to the Get Smart Token API documentation. Our API allows developers to integrate our token and badge system into their applications, enabling seamless interaction with our blockchain-based achievement platform.
-Welcome to the Get Smart Token API documentation. Our API enables developers to integrate our token and badge system into their applications, facilitating seamless interaction with our blockchain-based achievement platform.
+The GetSmart Token REST API allows developers to integrate badge issuance, $GETS token management, and learner data into external applications.
 
-## API Overview
-
-The Get Smart Token API is a RESTful API that uses standard HTTP methods and returns responses in JSON format. It provides access to various functionalities of our platform, including user management, token operations, and badge interactions.
-The Get Smart Token API is a RESTful API that utilizes standard HTTP methods and returns responses in JSON format. It provides access to various functionalities of our platform, including user management, token operations, and badge interactions.
+---
 
 ## Base URL
 
-All API requests should be made to:
-
+```
 https://api.getstoken.org/v1
+```
 
+All requests must use **HTTPS**.
 
-Please note that all requests must use HTTPS.
+---
 
 ## Authentication
 
-API requests require authentication using an API key. Include your API key in the header of each request:
+Include your API key in the `Authorization` header:
 
+```
 Authorization: Bearer YOUR_API_KEY
+```
 
+To obtain an API key, contact [hello@getstoken.org](mailto:hello@getstoken.org).
 
-To obtain an API key, please contact our developer support team.
+---
 
 ## Rate Limiting
 
-To ensure fair usage and maintain system stability, our API implements rate limiting. Current limits are:
+| Limit | Value |
+|---|---|
+| Per hour | 1,000 requests per API key |
+| Per second | 10 requests per API key |
 
-- 1000 requests per hour per API key
-- 10 requests per second per API key
+Exceeded limits return `429 Too Many Requests`.
+
+---
 
 ## Common Endpoints
 
-While specific endpoint documentation is available in our detailed API reference, common operations include:
+| Resource | Operations |
+|---|---|
+| **Users** | Create, retrieve, update learner profiles |
+| **Badges** | Issue, verify, list badges |
+| **Tokens** | Check $GETS balances, view token history |
+| **Achievements** | Track mission progress and completion status |
 
-- User Management (creation, retrieval, updating)
-- Token Operations (minting, transferring, balance checking)
-- Badge Interactions (issuing, verifying, listing)
-- Achievement Tracking (progress updates, completion status)
+Full endpoint reference available at [api.getstoken.org/v1/docs](https://api.getstoken.org/v1/docs).
 
-## Response Formats
+---
 
-All API responses are returned in JSON format. A typical response structure includes:
+## Response Format
+
+All responses are JSON:
 
 ```json
 {
   "status": "success",
-  "data": {
-    // Response data here
-  },
-  "message": "Operation completed successfully"
+  "data": { }
 }
-Error Handling
-In case of an error, the API will return an appropriate HTTP status code along with a JSON response containing error details:
+```
 
+Errors:
+
+```json
 {
   "status": "error",
   "error": {
     "code": "ERROR_CODE",
-    "message": "A description of the error"
+    "message": "Description of the error"
   }
 }
 ```
-Versioning
-The API version is included in the URL path. We recommend specifying the API version in your requests to ensure compatibility.
 
-SDK and Libraries
-We offer SDKs for popular programming languages to facilitate easier integration:
+---
 
-JavaScript
-Python
-Java
-Ruby
-Webhooks
-Our API supports webhooks for real-time event notifications. Configure webhooks in your developer dashboard to receive updates on specific events.
+## Platform Tech Stack
 
-Testing
-A sandbox environment is available for testing your integrations without affecting live data. Use the following base URL for sandbox requests:
+| Layer | Technology |
+|---|---|
+| Frontend | Next.js 15 (App Router) on Cloudflare Pages |
+| AI Agent | Google Gemma 4 via Gemini API + on-device LiteRT/WebGPU |
+| Chatbot | Cloudflare Worker |
+| Blockchain | Base network (Coinbase) |
+| Auth | Coinbase OAuth |
+| Database | MongoDB Atlas |
 
-https://sandbox-api.getstoken.org/v1
+---
+
+## Repositories
+
+| Repo | Description |
+|---|---|
+| [getsmart-web](https://github.com/getsmart-token/getsmart-web) | Next.js 15 main site |
+| [gemma_airgap](https://github.com/getsmart-token/gemma_airgap) | Gemma AirGap Agent (standalone) |
+| [gs_help_int](https://github.com/getsmart-token/gs_help_int) | This help documentation |
+
+---
+
+## Support
+
+For API access, integration questions, or to report issues:
+
+- Email: [hello@getstoken.org](mailto:hello@getstoken.org)
+- GitHub Issues: [github.com/getsmart-token](https://github.com/getsmart-token)
